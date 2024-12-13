@@ -76,7 +76,7 @@ class OpenAIModel(Model):
             model_name: The name of the OpenAI model to use. List of model names available
                 [here](https://github.com/openai/openai-python/blob/v1.54.3/src/openai/types/chat_model.py#L7)
                 (Unfortunately, despite being ask to do so, OpenAI do not provide `.inv` files for their API).
-            base_url: The base url for the OpenAI requests, if not provided, the `OPENAI_BASE_URL` environment variable
+            base_url: The base url for the OpenAI requests. If not provided, the `OPENAI_BASE_URL` environment variable
                 will be used if available. Otherwise, defaults to OpenAI's base url.
             api_key: The API key to use for authentication, if not provided, the `OPENAI_API_KEY` environment variable
                 will be used if available.
