@@ -130,7 +130,7 @@ agent = Agent(model)
 
 #### `base_url` argument
 
-To use another OpenAI compatible API, such as [OpenRouter](https://openrouter.ai), you can configure that via the [`base_url` argument][pydantic_ai.models.openai.OpenAIModel.__init__]:
+To use another OpenAI-compatible API, such as [OpenRouter](https://openrouter.ai), you can make use of the [`base_url` argument][pydantic_ai.models.openai.OpenAIModel.__init__]:
 
 ```python {title="openai_model_base_url.py"}
 from pydantic_ai import Agent
