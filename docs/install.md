@@ -152,6 +152,23 @@ agent = Agent(model)
 ...
 ```
 
+To use with any models & providers on [OpenRouter](https://openrouter.ai), you would create a similar client:
+
+```python {title="openai_openrouter.py"}
+from openai import AsyncOpenAI
+
+from pydantic_ai import Agent
+from pydantic_ai.models.openai import OpenAIModel
+
+client = AsyncOpenAI(
+  base_url='https://openrouter.ai/api/v1',
+  api_key='your-api-key',
+)
+model = OpenAIModel('anthropic/claude-3.5-sonnet', openai_client=client)
+agent = Agent(model)
+...
+```
+
 ### Gemini
 
 [`GeminiModel`][pydantic_ai.models.gemini.GeminiModel] let's you use the Google's Gemini models through their `generativelanguage.googleapis.com` API.
