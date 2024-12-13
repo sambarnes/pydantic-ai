@@ -82,7 +82,7 @@ class OpenAIModel(Model):
                 will be used if available.
             openai_client: An existing
                 [`AsyncOpenAI`](https://github.com/openai/openai-python?tab=readme-ov-file#async-usage)
-                client to use, if provided, `base_url`, `api_key`, and `http_client` must be `None`.
+                client to use. If provided, `base_url`, `api_key`, and `http_client` must be `None`.
             http_client: An existing `httpx.AsyncClient` to use for making HTTP requests.
         """
         self.model_name: OpenAIModelName = model_name
